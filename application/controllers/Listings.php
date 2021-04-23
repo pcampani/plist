@@ -71,7 +71,7 @@ class Listings extends CI_Controller{
 			redirect("/");
         }
 	}
-
+	/*DOCU This function deletes a product from the database: Author:Philip*/
     public function delete($id){
 		$product = new Product();
 		$product->where("id", $id)->get();
